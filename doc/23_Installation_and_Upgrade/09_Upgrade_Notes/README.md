@@ -1,4 +1,8 @@
 # Upgrade Notes
+## Pimcore 12.0.0
+### [Documents]
+- Removed deprecated Headless Chrome Processor.
+
 ## Pimcore 11.5.0
 ### [Events]
 - `context` property of `ResolveUploadTargetEvent` is deprecated. Use `setArgument()` method instead.
