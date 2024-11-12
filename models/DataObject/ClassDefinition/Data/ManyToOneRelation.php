@@ -558,7 +558,8 @@ class ManyToOneRelation extends AbstractRelations implements QueryResourcePersis
             $typeCondition = '`' . $typeField . '` = ' . "'" . $matches[1] . "'";
             $value = $matches[2];
 
-            return '(' . $prefix . $typeCondition . ' AND ' . $prefix . $this->getRelationFilterCondition($value, $operator, $name) . ')';
+            return '(' . $prefix . $typeCondition . ' AND ' . $prefix
+                . $this->getRelationFilterCondition($value, $operator, $name) . ')';
         }
 
         return $this->getRelationFilterCondition($value, $operator, $name);
